@@ -1,0 +1,260 @@
+/*Body Background and overlay*/
+/*
+Color Pallette
+OLD
+Off white- #f4f4f4
+Green- #00af91
+Gold- #f8e4b7
+Red- #aa3a3a
+
+
+new pallette
+light green-00af91
+dark green-007965
+orange-f58634
+yellow-ffcc29
+
+*/
+
+/*General Purpose CSS Classes*/
+.orangeTxt{
+     color: #f58634;
+}
+.whiteTxt{
+     color: #f4f4f4;
+}
+.goldTxt{
+     color: #ffcc29;
+}
+.title{
+     text-align: center;
+}
+a:hover{
+     color:unset;
+     text-decoration:none;
+}
+em{
+     font-weight: bolder;
+}
+a{
+     color:unset;
+     text-decoration:none;
+}
+
+.disabled{
+     display: none;
+}
+
+/*Nav Bar customization*/
+
+.customNav{
+     width: 100px;
+}
+
+
+/*Header and background formatting*/
+body{
+     
+     background-image:url(https://images.unsplash.com/photo-1553697982-85b48ee3dced?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-attachment:fixed;
+     background-size:cover;
+     
+     width: auto;
+     height:auto;
+        
+}
+.bodyOverlay{
+     position: absolute;
+     top:0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     height:auto;
+     background-color:#00af91;
+     opacity:0.7;
+     z-index:-1;
+     
+    
+}
+
+@media only screen and (max-width:600px)
+{
+body{
+     background-color:#00af91;
+     background-image:none;
+     }
+.bodyOverlay{
+         background-color:transparent;
+             
+     }
+.customNav{
+     margin-top: 10px;
+}     
+}
+
+
+/*Intro page/jumbotron CSS*/
+.introPage{
+     height: 100px;
+     background-color:transparent;
+     margin-bottom:500px;
+     margin-top: 100px;
+     position:static;
+     
+}
+.introPage1{
+     margin: auto;
+     color:#ffcc29;
+     z-index: 1;
+     
+}
+
+.introPage1 h1{
+     font-size: 700%;
+     font-family: 'Noto Serif', serif;
+     text-align: center;
+     
+     
+     
+}
+.introPage1 p {
+     font-size: 3em;
+     text-align: center;
+     
+}
+
+
+
+
+/* Page 2 -Profile*/
+.page2{
+     background-color:#f4f4f4;
+     padding-bottom:20px;     
+     }
+
+.profile
+{
+text-align: center;
+
+}
+.profile h1{
+     color:#00af91;
+     font-weight:normal;
+}
+.profile img {
+    border-radius: 50%;
+    border-color: #00af91;
+    border-style:solid;
+    border-width: thick;
+    height:200px;
+    margin:15px,0px,15px
+}
+
+
+
+
+
+/*About me section*/
+.profileBio{
+     text-align: center;
+     margin:auto;
+     
+}
+.profileBio h2{
+     color: #00af91;
+     
+}
+
+
+/*Page 3- Experience*/
+.page3{
+    
+     background-color:#007965;
+     height: auto;
+     padding-top: 20px;
+     color: #ffcc29;
+}
+.page3 .title{
+     padding-bottom: 20px;
+}
+
+
+/*Page 4 - Sample Projects*/
+.page4{
+    
+     background-color:#f4f4f4;
+     color: #00af91;
+     justify-content: center;
+     text-align: center;
+     
+}
+
+.itemOverlay{
+     position:inherit;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     height: 100%;
+     width: 100%;
+     opacity: 0;
+     transition: 0.5s ease;
+     background-color:#00af91;
+     text-align: left;
+     padding:20px;
+     
+}
+.itemOverlay:hover{
+     opacity: 0.95;
+}
+
+.p4box
+{
+     background-color:grey;
+     margin: 10px;
+     height:325px;
+     width: 325px;
+     justify-content: center;
+     color:white;
+
+}
+.p4box h4{
+     text-align: center;
+     border-bottom: solid 2px white ;
+     transition: outline 0.6s linear;
+
+}
+.workXP{
+     text-align: center;
+}
+.pic1{
+     background-image: url(images/P1.PNG);
+     background-position:center;
+     background-size: cover;
+}
+.pic2{
+     background-image: url(images/P2.PNG);
+     background-position:center;
+     background-size:cover;
+}
+.pic3{
+     background-image: url(images/P3.PNG);
+     background-position:center;
+     background-size:cover;
+}
+
+
+
+/*page5 Contact */
+.page5{
+     height: 500px;
+      background-color:#007965;
+      text-align: center;
+}
+.mailIcon{
+     width: 50px;
+     height: 50px;
+     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik00NjcsNzZINDVDMjAuMTM3LDc2LDAsOTYuMjYyLDAsMTIxdjI3MGMwLDI0Ljg4NSwyMC4yODUsNDUsNDUsNDVoNDIyYzI0LjY1NSwwLDQ1LTIwLjAzLDQ1LTQ1VjEyMQ0KCQkJQzUxMiw5Ni4zMDYsNDkxLjk0Myw3Niw0NjcsNzZ6IE00NjAuNjk4LDEwNmMtOS4xOTQsOS4xNDUtMTY3LjQxNSwxNjYuNTMzLTE3Mi44NzgsMTcxLjk2N2MtOC41LDguNS0xOS44LDEzLjE4LTMxLjgyLDEzLjE4DQoJCQlzLTIzLjMyLTQuNjgxLTMxLjg0OC0xMy4yMDhDMjIwLjQ3OCwyNzQuMjg0LDY0LjAwMywxMTguNjM0LDUxLjMwMiwxMDZINDYwLjY5OHogTTMwLDM4NC44OTRWMTI3LjEyNUwxNTkuNjM4LDI1Ni4wOEwzMCwzODQuODk0eg0KCQkJIE01MS4zMjEsNDA2bDEyOS41ODctMTI4Ljc2M2wyMi4wNTksMjEuOTQzYzE0LjE2NiwxNC4xNjYsMzMsMjEuOTY3LDUzLjAzMywyMS45NjdjMjAuMDMzLDAsMzguODY3LTcuODAxLDUzLjAwNS0yMS45MzkNCgkJCWwyMi4wODctMjEuOTcxTDQ2MC42NzksNDA2SDUxLjMyMXogTTQ4MiwzODQuODk0TDM1Mi4zNjIsMjU2LjA4TDQ4MiwxMjcuMTI1VjM4NC44OTR6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=)
+}
