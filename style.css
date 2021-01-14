@@ -1,12 +1,5 @@
 /*Body Background and overlay*/
 /*
-Color Pallette
-OLD
-Off white- #f4f4f4
-Green- #00af91
-Gold- #f8e4b7
-Red- #aa3a3a
-
 
 new pallette
 light green-00af91
@@ -26,6 +19,9 @@ yellow-ffcc29
 .goldTxt{
      color: #ffcc29;
 }
+
+     
+     
 .title{
      text-align: center;
 }
@@ -91,7 +87,8 @@ body{
      }
 .customNav{
      margin-top: 10px;
-}     
+}   
+ 
 }
 
 
@@ -115,10 +112,17 @@ body{
      font-size: 700%;
      font-family: 'Noto Serif', serif;
      text-align: center;
-     
-     
-     
+     margin: auto;
+       
 }
+@media only screen and (max-width:600px)
+{
+     .introPage h1 {
+          font-size: 450%;
+     } 
+}
+
+
 .introPage1 p {
      font-size: 3em;
      text-align: center;
@@ -244,14 +248,34 @@ text-align: center;
      background-position:center;
      background-size:cover;
 }
-
-
-
-/*page5 Contact */
+/*Page 5-Abilities*/
 .page5{
-     height: 500px;
-      background-color:#007965;
+     color:#f4f4f4;
+     background-color: #007965;
+     justify-content: center;
+     text-align: center;
+     
+}
+.skillBox{
+     background-color:#00af91;
+     border:thin;
+     border: solid;
+     border-color:#007965;
+}
+.skillBox:hover{
+     background-color: #f4f4f4;
+     color:#f58634;
+     border:#f58634;
+     border-style: solid;
+     
+}
+
+/*page6 Contact */
+.page6{
+     height: 400px;
+      background-color:grey;
       text-align: center;
+      color: #ffcc29;
 }
 .mailIcon{
      width: 50px;
