@@ -261,6 +261,14 @@ text-align: center;
      background-position:center;
      background-size:cover;
 }
+.pic6{
+     background-image:url(images/P6.PNG);
+     background-position:center;
+     background-repeat: no-repeat;
+     background-size: 350px 300px;
+
+}
+
 /*Page 5-Abilities*/
 .page5{
      color:#f4f4f4;
